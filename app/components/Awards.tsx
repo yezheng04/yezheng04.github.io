@@ -1,7 +1,8 @@
 const awards = [
-  { name: "[Award Name 1] (e.g., National Scholarship)", year: "2024" },
-  { name: "[Award Name 2] (e.g., Best Paper Award at XXX)", year: "2023" },
-  { name: "[Award Name 3] (e.g., Outstanding Graduate)", year: "2022" },
+  { name: "Hunan University Second-Class Scholarship (湖南大学二等奖学金)", year: "2025" },
+  { name: "Changsha Bank Scholarship (长沙银行奖学金)", year: "2024" },
+  { name: "China Robot Competition & ROBOCUP China Open, RoboCup Soccer Robot Middle-Size Technical Challenge Champion (中国机器人大赛暨ROBOCUP机器人世界杯中国赛 中型组技术挑战赛 冠军)", year: "2023" },
+  { name: "Intelligent Robot Fighting and Gaming Competition, Second Prize (中国智能格斗机器人及竞技大赛 二等奖)", year: "2023" },
 ];
 
 export default function Awards() {
@@ -12,7 +13,7 @@ export default function Awards() {
         {awards.map((award, idx) => (
           <li key={idx} className="flex justify-between border-b border-gray-100 pb-2">
             <span>{award.name}</span>
-            <span className="text-gray-500">{award.year}</span>
+            <span className="text-gray-500 shrink-0 ml-4">{award.year}</span>
           </li>
         ))}
       </ul>
